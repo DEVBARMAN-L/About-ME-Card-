@@ -1,0 +1,11 @@
+.container{
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 560px;
+    height: 530px;
+    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+}
