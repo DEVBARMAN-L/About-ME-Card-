@@ -8,9 +8,10 @@
     "wdth" 100;
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 .box-container{
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 560px;
@@ -19,6 +20,7 @@ body{
 .box-container:hover{
     background-color: ;
     box-shadow: 6px 2px 3px 1px plum;
+    border: solid 2px #e66465;
 }
 .container{
     align-items: center;
@@ -33,21 +35,34 @@ body{
 .color-3{
     color: #e66465;
 }
+.h2{
+    text-align: center;
+}
 .p{
-    color: white;
+    color: darkgray;
     font: 500;
     font-size: 1.25rem;
 }
 .card{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
     width: 560px;
     height: 530px;
     border: solid 1px black;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color:#22546e00;
+   --grad: red, blue;
+  padding: 2.5rem;
+  background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
+  border-radius: 2rem;
+  gap: 1.5rem;
+  grid-template: 'title icon' 'content content' 'bar bar' / 1fr auto;
+  font-family: system-ui, sans-serif;
+  color: #444447;
+  box-shadow: 
+    inset -2px 2px hsl(0 0 100% / 1),
+    -20px 20px 40px hsl(0 0 0 / .25) ;
 }
-
 .card-title{
     color: black;
     font: 700;
@@ -68,9 +83,24 @@ body{
     background-color: gray; 
     border: none;
     border-radius: 20px 20px 20px 20px;
-    margin-top: 50px
-}
+ }
+
+.btn-card2{
+    width: 100px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border: none;
+ }
 .btn-card:hover{
     background:linear-gradient(#e66465, #9198e5) ;
     color: black;
+    border: none;
+}
+.btn-card2:hover{
+  background-color: rgb(107, 152, 219);
+  border: none;
+  box-shadow: 2px 3px 4px 0px rgb(90, 155, 230);
 }
