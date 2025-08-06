@@ -1,3 +1,7 @@
+.box-container{
+    align-items: center;
+    justify-content: center;
+}
 .container{
     align-items: center;
     justify-content: center;
@@ -8,4 +12,15 @@
     border: solid 1px black;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.card-title{
+    color: black;
+    font: 700;
+    font-size: 1.67rem;
+}
+.image-card{
+    width: 200px;
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 2px rgb(239, 118, 118));
 }
